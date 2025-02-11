@@ -1,0 +1,1 @@
+get_user_query = "SELECT u.name FROM Users u JOIN interview i ON u.user_id = i.user_id WHERE i.interview_id = %s"
