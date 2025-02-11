@@ -118,7 +118,8 @@ with col1:
             )
 
     if start_button:
-        url = "http://127.0.0.1:8000/begin_interview"
+        # url = "http://127.0.0.1:8000/begin_interview"
+        url = "http://16.170.251.107/begin_interview"
         headers = {"Content-Type": "application/json"}
         body = {
             "user_id": user_id,
@@ -148,7 +149,8 @@ if candidate_answer:
     st.session_state.chat_history[-1]['answer'] = candidate_answer
 
     try:
-        url = "http://127.0.0.1:8000/begin_interview"
+        # url = "http://127.0.0.1:8000/begin_interview"
+        url = "http://16.170.251.107/begin_interview"
         headers = {"Content-Type": "application/json"}
         body = {
             "user_id": user_id,
